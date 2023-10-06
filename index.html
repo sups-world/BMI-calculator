@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI calculator</title>
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
     <div class="container">
       <div><h1>BMI calculator</h1></div>
-      <form class="form-page">
+      <form id="myForm">
         <label for="weight">Please enter weight in kgs</label>
-        <input type="text" id="weight" placeholder="enter weight in kgs" />
+        <input type="text" name="weight" placeholder="enter weight in kgs" />
         <label for="height">Please enter height in meters</label>
-        <input type="text" id="height" placeholder="enter height in meters" />
+        <input type="text" name="height" placeholder="enter height in meters" />
         <button type="submit">Calculate</button>
       </form>
     </div>
+    <div class="result" id="result">Your BMI is::</div>
+    <div id="category">You are :::</div>
+    <script src="index.js"></script>
   </body>
 </html>
