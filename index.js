@@ -17,11 +17,11 @@ formElement.addEventListener("submit", (e) => {
 
     const bmi = calculateBmi(height, weight);
 
-    resultElement.innerText = `Your BMI is::${bmi}`;
+    resultElement.innerText = `Your BMI is:::::::${bmi}`;
 
     const cat = calcCat(bmi);
     //   console.log(cat);
-    categoryElement.innerText = `You are::: ${cat}`;
+    categoryElement.innerText = `Health Status :::${cat}`;
     formElement.reset();
   } catch (error) {
     console.log(error);
